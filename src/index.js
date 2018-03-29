@@ -23,6 +23,7 @@ function checkDomRelativePosition(element1, element2) {
     const twoHeight = two.offsetHeight;
     const twoCenterX = twoLeft + twoWidth / 2;
     const twoCenterY = twoTop + twoHeight / 2;
+    // 计算位置
     if (oneCenterX - twoCenterX > 0) {
         onePositionX = 'right';
         twoPositionX = 'left';
@@ -37,6 +38,7 @@ function checkDomRelativePosition(element1, element2) {
         onePositionY = 'top';
         twoPositionY = 'bottom';
     }
+    // 返回结果
     return {
         onePositionX: onePositionX,
         onePositionY: onePositionY,
